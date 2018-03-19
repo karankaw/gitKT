@@ -1,63 +1,78 @@
-https://stackoverflow.com/questions/18487089/git-command-to-checkout-any-branch-and-overwrite-local-changes 
+git has remote branches and local branches
+Current branch has asterisk
 
- 
-
-On master 
-
-"git checkout branch1"  
-
-does not work instead gives warning that U should save unsaved work 
-
-So, what we do is force it to ignore and still move by passing –f flag 
-
-"git checkout –f branch1" 
-
- 
-
---------------------------------------------------------------------------------- 
-
-• https://sethrobertson.github.io 
-
------------------------------------------------------------------------------------------------------ 
-
-• $ git config –l 
------------------------------------------------------------------------------------------------------ 
-Show whom I am fetching and pushing   
-
-git remote -v   
-
- 
-
-Change hostname of gitserver "origin" is name of GIT Server host .git extension 
-
-git remote set-url origin  
-
-https://github.com/USERNAME/REPOSITORY.git 
-
-https://help.github.com/articles/changing-a-remote-s-url/ 
-
- ----------------------------------------------------------------------------------------------------- 
-
- List of all branches  
+List of all branches  
 
 •git branch -a  
 
 •git branch -v -a    
+----------------------------------------------------------------------------------------------------- 
+Working Directory (Tracked/Untracked Files)
+     git add .     
+Staged/indexed
+     •  git commit -m ""
+	  • git commit  -a -m "" : This adds tracked file for adding, It does not touch untracked files, Shortcut to do add and commit in 1 go for tracked file
+Local Repository
 
-•git branch -b branchName origin/branchName  
+Staged to Working Directory
+• git checkout head
 
- 
+Local Repo to Stage 
+• git reset --hard head~1 (File changes retained, Head goes back and commit gone from history)
+• git reset head~1 ( File Changes not retained, Head goes back and commit gone from history)
 
-https://confluence.atlassian.com/bitbucket/checkout-a-branch-into-a-local-repository-313466957.html   
+You can check it by using
+• git log
 
-https://stackoverflow.com/questions/4858047/the-following-untracked-working-tree-files-would-be-overwritten-by-checkout      
+https://i.stack.imgur.com/zLTpo.png
+-----------------------------------------------------------------------------------------------------
+Sometimes it does not recognize ur new branch it wants to switch to
+Just Pull updates, using
 
-https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch    
-
- 
-
-git clean -d -fx ""   
+• git fetch
 
 ----------------------------------------------------------------------------------------------------- 
+https://stackoverflow.com/questions/18487089/git-command-to-checkout-any-branch-and-overwrite-local-changes 
 
+ 
+On master 
+"git checkout branch1"  
+
+does not work instead gives warning that U should save unsaved work 
+So, what we do is force it to ignore and still move by passing –f flag 
+
+• "git checkout –f branch1" 
+
+• git branch -b branchName origin/branchName  
+ 
+https://confluence.atlassian.com/bitbucket/checkout-a-branch-into-a-local-repository-313466957.html   
+https://stackoverflow.com/questions/4858047/the-following-untracked-working-tree-files-would-be-overwritten-by-checkout     
+https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch    
+
+• git clean -d -fx ""  
+----------------------------------------------------------------------------------------------------- 
+• git stash save
+• git stash pop
+• git stash apply
+----------------------------------------------------------------------------------------------------- 
+A website which tells us how to rollback commits and discard
+
+• https://sethrobertson.github.io 
+
+----------------------------------------------------------------------------------------------------- 
+List of all the git config that  we have
+• $ git config –l 
+
+.gitconfig  Folder in C:\Users\KaranKaw
+----------------------------------------------------------------------------------------------------- 
+Show whom I am fetching and pushing   
+
+• git remote -v   
+
+Change hostname of gitserver "origin" is name of GIT Server host .git extension 
+git remote set-url origin  
+
+https://github.com/USERNAME/REPOSITORY.git 
+https://help.github.com/articles/changing-a-remote-s-url/ 
+----------------------------------------------------------------------------------------------------- 
 https://superuser.com/questions/199507/how-do-i-ensure-git-doesnt-ask-me-for-my-github-username-and-password  
