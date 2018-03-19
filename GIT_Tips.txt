@@ -14,6 +14,12 @@ Staged/indexed
 	  • git commit  -a -m "" : This adds tracked file for adding, It does not touch untracked files, Shortcut to do add and commit in 1 go for tracked file
 Local Repository
 
+
+For removing a file altogether which has been added freshly using add.
+ •  git checkout -f master 
+This actually causes us to ignore file even if it has been added to index freshly.
+
+
 Staged to Working Directory
 •  (use "git reset HEAD <file>..." to unstage) , File remains but gets out of Staging Area to Working Directory - For Untracked
 •  (use "git reset HEAD <file>..." to unstage), This Same command works for some TRACKED file to Just remove it from Index but changed contents stay
@@ -24,7 +30,7 @@ vs
 HEAD~1
 because Commmit pushes Local HEAD 
 
-Local Repo to Stage 
+Local Repo to Stage/Index
 • git reset --hard head~1 (File changes retained, Head goes back and commit gone from history)
 • git reset head~1 ( File Changes not retained, Head goes back and commit gone from history)
 
