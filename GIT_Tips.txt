@@ -1,7 +1,7 @@
 git has remote branches and local branches
 Current branch has asterisk
 
-List of all branches  
+List of all branches
 
 •git branch -a  
 
@@ -15,7 +15,9 @@ Staged/indexed
 Local Repository
 
 Staged to Working Directory
-•  (use "git reset HEAD <file>..." to unstage) , File remains but gets out of Staging Area to Working Directory. 
+•  (use "git reset HEAD <file>..." to unstage) , File remains but gets out of Staging Area to Working Directory - For Untracked
+•  (use "git reset HEAD <file>..." to unstage), This Same command works for some TRACKED file to Just remove it from Index but changed contents stay
+
 
 DIFFERENCE is HEAD
 vs
