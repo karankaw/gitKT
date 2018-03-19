@@ -15,7 +15,12 @@ Staged/indexed
 Local Repository
 
 Staged to Working Directory
-• git checkout head
+•  (use "git reset HEAD <file>..." to unstage) , File remains but gets out of Staging Area to Working Directory. 
+
+DIFFERENCE is HEAD
+vs
+HEAD~1
+because Commmit pushes Local HEAD 
 
 Local Repo to Stage 
 • git reset --hard head~1 (File changes retained, Head goes back and commit gone from history)
