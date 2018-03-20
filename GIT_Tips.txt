@@ -21,8 +21,8 @@ This actually causes us to ignore file even if it has been added to index freshl
 
 
 Staged to Working Directory
-•  (use "git reset HEAD <file>..." to unstage) , File remains but gets out of Staging Area to Working Directory - For Untracked
-•  (use "git reset HEAD <file>..." to unstage), This Same command works for some TRACKED file to Just remove it from Index but changed contents stay
+•  (use "git reset HEAD ..." to unstage) ,
+•  (use "git reset HEAD ..." to unstage), 
 
 
 DIFFERENCE is HEAD
