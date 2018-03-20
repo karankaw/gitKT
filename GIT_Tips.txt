@@ -1,5 +1,5 @@
 git has remote branches and local branches
-Current branch has asterisk
+Current branch has asterisk *
 
 List of all branches
 
@@ -15,14 +15,13 @@ Staged/indexed
 Local Repository
 
 
-For removing a file altogether which has been added freshly using add.
- •  git checkout -f master 
-This actually causes us to ignore file even if it has been added to index freshly.
+For discarding changes I did, but did not staged(used add cmd on them)
+  • git checkout -- <file> to discard changes in working directory
+  • git checkout -f master    to discard changes in working directory, switch branch
 
 
-Staged to Working Directory
-•  (use "git reset HEAD ..." to unstage) ,
-•  (use "git reset HEAD ..." to unstage), 
+Staged to Working Directory (Removing file from stage, because it might be wrong)
+•  git reset HEAD <file>..." to unstage
 
 
 DIFFERENCE is HEAD
